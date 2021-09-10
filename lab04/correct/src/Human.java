@@ -3,7 +3,7 @@ import java.util.List;
 
 // lab work
 // This Class violates all SOLID Principles, fix it in a Logical way ;
-public class Human extends Job {
+public class Human {
 
     private Salary salary;
     private Hobby hobbies;
@@ -12,16 +12,6 @@ public class Human extends Job {
     String sayHello(Languages language) {
         String greeting = language.speak();
         return greeting;
-    }
-
-    @Override
-    void ownCompany() {
-        job = "businessman";
-    }
-
-    @Override
-    void becomeEmployee() {
-        job = "employee";
     }
 
     public static void main(String[] args) {
